@@ -30,5 +30,12 @@
     let btn = document.querySelector(".off");
 
     // Add your code here
+    btn.onclick = function (e) {
+      if (e.target.textContent == "Machine is off") {
+        e.target.textContent = "Uendel";
+      } else {
+        e.target.textContent = "Machine is off";
+      }
+    };
   </script>
 </html>
